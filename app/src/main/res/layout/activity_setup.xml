@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    android:background="#dcdcdc"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/setup_topLayer"
+        android:background="#308856"
+        android:layout_width="match_parent"
+        android:layout_height="169dp">
+
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="38dp"
+            android:src="@drawable/rapport_logo"
+            android:layout_centerHorizontal="true"/>
+
+        <TextView
+            android:textSize="20dp"
+            android:textColor="#ffffff"
+            android:gravity="center_horizontal"
+            android:layout_width="140dp"
+            android:layout_height="27dp"
+            android:layout_marginTop="89dp"
+            android:text="Profile Set Up"
+            android:layout_centerHorizontal="true"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/education_status"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/setup_topLayer">
+
+
+        <ScrollView
+            android:layout_width="412dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="0dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="0dp"
+            android:layout_marginEnd="0dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true">
+
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+               <RelativeLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:background="#FFFFFF">
+                   <de.hdodenhof.circleimageview.CircleImageView
+                       android:id="@+id/setup_profile_Image"
+                       android:layout_width="150dp"
+                       android:layout_height="150dp"
+                       android:layout_marginTop="10dp"
+                       android:layout_marginBottom="10dp"
+                       android:src="@drawable/profile"
+                       android:layout_centerHorizontal="true"
+                       />
+                   <TextView
+                       android:id="@+id/setup_add_profile_image"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:text="add profile image"
+                       android:textColor="#000000"
+                       android:layout_below="@+id/setup_profile_Image"
+                       android:gravity="center"
+                       />
+               </RelativeLayout>
+
+
+
+                <RelativeLayout
+                    android:id="@+id/personal_info"
+                    android:background="#ffffff"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+                    <TextView
+                        android:textSize="18dp"
+                        android:textStyle="bold"
+                        android:textColor="#000000"
+                        android:gravity="center_vertical"
+                        android:id="@+id/textView2"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="34dp"
+                        android:text="Personal Information"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginStart="29dp"
+                        android:layout_alignParentStart="true"/>
+
+
+                    <EditText
+                        android:textColor="#308856"
+                        android:textColorHint="#308856"
+                        android:id="@+id/setup_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginTop="99dp"
+                        android:hint="Name"
+                        android:ems="10"
+                        android:inputType="textPersonName"
+                        android:layout_marginStart="29dp"
+                        android:layout_marginEnd="29dp"
+                        android:layout_alignParentStart="true"
+                        android:backgroundTint="#308856"/>
+
+
+                    <EditText
+                        android:textColor="#308856"
+                        android:textColorHint="#308856"
+                        android:id="@+id/setup_job"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginTop="157dp"
+                        android:hint="Job/Occupation"
+                        android:ems="10"
+                        android:inputType="textPersonName"
+                        android:layout_marginStart="29dp"
+                        android:layout_marginEnd="29dp"
+                        android:layout_alignParentStart="true"
+                        android:backgroundTint="#308856"/>
+
+
+                    <EditText
+                        android:textColor="#308856"
+                        android:textColorHint="#308856"
+                        android:id="@+id/setup_city"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginTop="216dp"
+                        android:hint="City"
+                        android:ems="10"
+                        android:inputType="textPersonName"
+                        android:layout_marginStart="29dp"
+                        android:layout_marginEnd="29dp"
+                        android:layout_alignParentStart="true"
+                        android:backgroundTint="#308856"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:background="#ffffff"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:layout_below="@+id/personal_info">
+
+                    <TextView
+                        android:textSize="18dp"
+                        android:textStyle="bold"
+                        android:textColor="#000000"
+                        android:gravity="center_vertical"
+                        android:id="@+id/education"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="34dp"
+                        android:text="Education"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginStart="29dp"
+                        android:layout_alignParentStart="true"/>
+
+                    <EditText
+                        android:textColor="#308856"
+                        android:textColorHint="#308856"
+                        android:id="@+id/setup_samaNumber"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginTop="99dp"
+                        android:hint="Please fill valid SAMA number"
+                        android:ems="10"
+                        android:inputType="number"
+                        android:layout_marginStart="29dp"
+                        android:layout_marginEnd="29dp"
+                        android:layout_alignParentStart="true"
+                        android:backgroundTint="#308856"/>
+
+                    <Spinner
+                        android:id="@+id/setup_university_list"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginTop="157dp"
+                        android:layout_marginStart="29dp"
+                        android:layout_marginEnd="29dp"/>
+
+                    <TextView
+                        android:textSize="18dp"
+                        android:textColor="#308856"
+                        android:id="@+id/setup_date_of_graduation"
+                        android:background="#ffffff"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginTop="216dp"
+                        android:text="Date of Graduation"
+                        android:layout_marginStart="29dp"
+                        android:layout_marginEnd="29dp"/>
+
+                    <View
+                        android:layout_gravity="center"
+                        android:background="#308856"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_below="@+id/setup_date_of_graduation"
+                        android:layout_marginStart="29dp" android:layout_marginEnd="29dp"/>
+
+                    <EditText
+                        android:textColor="#308856"
+                        android:textColorHint="#308856"
+                        android:id="@+id/setup_degree"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginTop="275dp"
+                        android:layout_marginBottom="56dp"
+                        android:hint="Degree"
+                        android:ems="10"
+                        android:inputType="textPersonName"
+                        android:layout_marginStart="29dp"
+                        android:layout_marginEnd="29dp"
+                        android:layout_alignParentStart="true"
+                        android:backgroundTint="#308856"/>
+
+
+                </RelativeLayout>
+
+                <Button
+                    android:id="@+id/setup_continue_btn"
+                    android:background="@drawable/button"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="13dp"
+                    android:text="Continue"
+                    android:layout_below="@+id/education_status"
+                    android:layout_marginStart="29dp"
+                    android:layout_marginEnd="29dp"/>
+            </LinearLayout>
+        </ScrollView>
+    </RelativeLayout>
+</RelativeLayout>

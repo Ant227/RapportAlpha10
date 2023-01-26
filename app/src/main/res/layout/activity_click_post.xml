@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF">
+
+        <ImageView
+            android:id="@+id/edit_post_imageView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"
+             />
+
+
+
+        <TextView
+            android:textSize="20dp"
+            android:textColor="@android:color/black"
+            android:id="@+id/edit_post_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="Post description..."
+            android:layout_below="@+id/edit_post_imageView"
+            android:layout_marginBottom="10dp"/>
+
+
+
+
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/edit_post_description"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="30dp">
+
+        <ImageView
+            android:id="@+id/edit_pencil"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/edit_pencil"
+            android:layout_marginStart="130dp"/>
+
+        <ImageView
+            android:id="@+id/edit_trashcan"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/trash_can"
+            android:layout_marginStart="220dp"/>
+
+    </RelativeLayout>
+
+    </RelativeLayout>
+</ScrollView>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".CommentActivity">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:text="Comments:"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="@color/colorBlack"
+        />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/comment_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/comments_input"
+            android:layout_marginBottom="10dp">
+
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+        <EditText
+            android:id="@+id/comments_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginEnd="55dp"
+            android:background="@color/colorWhite"
+            android:layout_alignParentBottom="true"
+            android:padding="15dp"
+            android:hint="write a comment here"
+            android:layout_marginStart="8dp"
+            android:inputType="textMultiLine"
+            />
+
+
+        <ImageButton
+            android:id="@+id/post_comment_btn"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/comments_input"
+            android:layout_alignTop="@+id/comments_input"
+            android:layout_alignParentEnd="true"
+            android:src="@drawable/ic_group_83"
+            android:background="@color/colorWhite"
+            android:padding="15dp"/>
+
+    </RelativeLayout>
+
+</LinearLayout>
+
+
+
+

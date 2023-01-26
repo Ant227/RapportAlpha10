@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    android:id="@+id/drawable_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="60dp">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+            <ImageView
+                android:id="@+id/Rapport_logo"
+                android:layout_width="46dp"
+                android:layout_height="46dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="5dp"
+                app:srcCompat="@drawable/rapport_logo"/>
+
+
+            <TextView
+                android:textSize="20dp"
+                android:textColor="#ffffff"
+                android:layout_width="75dp"
+                android:layout_height="27dp"
+                android:layout_marginLeft="60dp"
+                android:layout_marginTop="15dp"
+                android:text="Rapport"/>
+
+            <RelativeLayout
+                android:id="@+id/add_new_post_btn"
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentEnd="true"
+                android:layout_marginRight="80dp"
+                android:background="@color/colorRapport">
+
+                <ImageView
+                    android:id="@+id/add_new_post_btn1"
+                    android:background="#308856"
+                    android:focusableInTouchMode="false"
+                    android:clickable="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="15dp"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+
+                    android:src="@drawable/ic_createpostpic"
+                    android:scaleType="fitCenter"/>
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/post_profile_setting_btn"
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentEnd="true"
+                android:background="@color/colorRapport">
+
+
+                <ImageView
+                    android:id="@+id/post_profile_setting_btn1"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="15dp"
+                    android:background="#308856"
+                    android:clickable="true"
+                    android:focusableInTouchMode="false"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/ic_profile_settings_pic" />
+
+
+            </RelativeLayout>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tabs"
+            android:background="#308856"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"/>
+
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/all_user_post_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/appBarLayout"
+           />
+
+
+
+
+
+</RelativeLayout>

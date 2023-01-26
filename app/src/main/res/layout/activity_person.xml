@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".PersonActivity">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/person_app_bar_layout"
+            layout="@layout/app_bar_layout"
+/>
+
+        <LinearLayout
+            android:id="@+id/person_Info"
+            android:background="#ffffff"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/Button_Layer">
+
+
+            <ImageView
+                android:id="@+id/person_user_image"
+                android:layout_width="150dp"
+                android:layout_height="156dp"
+                android:layout_marginTop="12dp"
+                android:layout_gravity="center_horizontal"/>
+
+            <TextView
+                android:id="@+id/person_username"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:layout_marginTop="10dp"
+                android:text="User Name"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:layout_gravity="center_horizontal"/>
+
+            <TextView
+                android:id="@+id/person_user_job"
+                android:textSize="20dp"
+                android:textColor="#000000"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text="Job"
+                android:layout_gravity="center_horizontal"/>
+
+            <TextView
+                android:id="@+id/person_user_city"
+                android:textSize="20dp"
+                android:textColor="#000000"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text="City"
+                android:layout_marginBottom="5dp"
+                android:layout_gravity="center_horizontal"/>
+
+        </LinearLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/person_education_layer"
+            android:background="#ffffff"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp">
+
+            <TextView
+                android:id="@+id/person_education"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:textColor="#308856"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Education"
+                android:layout_marginStart="8dp"/>
+
+
+            <View
+                android:layout_gravity="center"
+                android:id="@+id/person_underline1"
+                android:background="#308856"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/person_education"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"/>
+
+
+            <TextView
+                android:id="@+id/person_sama"
+                android:textSize="18dp"
+                android:padding="10dp"
+                android:textColor="#000000"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="SAMA  : 123456"
+                android:layout_below="@+id/person_underline1"
+                android:layout_marginStart="15dp"/>
+
+            <TextView
+                android:id="@+id/person_university"
+                android:textSize="18dp"
+                android:padding="10dp"
+                android:textColor="#000000"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="UNIVERSITY"
+                android:layout_below="@+id/person_sama"
+                android:layout_marginStart="15dp"/>
+
+            <TextView
+                android:id="@+id/person_graduated_date"
+                android:textSize="18dp"
+                android:padding="10dp"
+                android:textColor="#000000"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="Graduated : 2019 March"
+                android:layout_below="@+id/person_university"
+                android:layout_marginStart="15dp"/>
+
+            <TextView
+                android:id="@+id/person_degree"
+                android:textSize="18dp"
+                android:padding="10dp"
+                android:textColor="#000000"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_marginBottom="20dp"
+                android:text="DEGREE"
+                android:layout_below="@+id/person_graduated_date"
+                android:layout_marginStart="15dp"/>
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/person_posts_button"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Posts"
+            android:textAllCaps="false"
+            android:textColor="@color/colorWhite"
+            android:layout_marginStart="50dp"
+            android:layout_marginEnd="50dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/button"
+            />
+
+    </LinearLayout>
+
+
+
+</ScrollView>

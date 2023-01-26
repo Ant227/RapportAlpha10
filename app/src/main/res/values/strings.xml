@@ -1,0 +1,67 @@
+<resources>
+    <string name="app_name">Rapport</string>
+    <string name="drawer_open">Drawer Open</string>
+    <string name="drawer_close">Drawer Close</string>
+
+
+    <string-array name="MedicalUni">
+
+        <item>Select your University</item>
+
+        <item>University of Medicine I</item>
+        <item>University of Medicine II </item>
+        <item>University of Medicine , Mandalay</item>
+        <item>University of Medicine , Magway</item>
+        <item>University of Medicine , Taungyi</item>
+
+    </string-array>
+
+
+    <string name="version_details">Blah Blah Blah ......</string>
+
+
+    <string name="versiondetails_12">
+
+        Issues Fixed \n
+        - back နှိပ်ရင် post now ပြန်ရောက်တဲ့ဟာ \n
+        - post တင်ပြီး ထိပ်ဆုံးက မပေါ်တဲ့ဟာ ( have to delete previous post datas) \n
+        - ပိစိညောက်တောက် post button is gone - profile pic မထည့်မိလဲ post လို့ရပြီ  \n
+        - post detail ( post ပုံ ကိုနှိပ်ရင် ဝင်သွားတဲ့နေရာ) မှာ ပုံ size မမှန်တာ ပြင်ပြီး  \n
+        \n
+        UI changes \n
+        - no more cards - smaller profile name font \n
+        - post layout changes \n
+        - added padding to post လုပ်ဖို့ စာရေးတဲ့နေရာ \n
+        \n
+        Features added \n
+        - like button is now working....yay! \n
+        - long posts are minimized. နှိပ်လိုက်ရင် အရှည်ပေါ်လာမယ်။\n
+        notes: dev time 18+ hours</string>
+
+
+    <string name="versiondetails_10">
+        login \n
+        - login with google \n
+        - create a new acc ( can use any mail) \n
+        - edit profile ( picture, name, occupation, location, SAMA, date of grad, degree) \n
+        \n
+        Feed \n
+        - card layout. \n
+        - name, occupation, location and date posted \n
+        - one photo per post. \n
+        - click on photo will open edit/delete post. \n
+
+        Profile/Setting \n
+        - can see profile settings \n
+        - log out \n
+
+        </string>
+    <string name="title_activity_main_tab">MainTabActivity</string>
+    <string name="tab_text_1">Tab 1</string>
+    <string name="tab_text_2">Tab 2</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+</resources>

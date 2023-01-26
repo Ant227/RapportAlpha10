@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    android:background="#dcdcdc"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+
+        android:id="@+id/post_header"
+        android:background="#308856"
+        android:layout_width="match_parent"
+        android:layout_height="140dp">
+
+
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="38dp"
+            android:src="@drawable/rapport_logo"
+            android:layout_centerHorizontal="true"/>
+
+        <TextView
+            android:textSize="20dp"
+            android:textColor="#ffffff"
+            android:gravity="center_horizontal"
+            android:layout_width="150dp"
+            android:layout_height="27dp"
+            android:layout_marginTop="89dp"
+            android:text="Setup New Post"
+            android:layout_centerHorizontal="true"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/post_photo_layer"
+        android:background="#ffffff"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginTop="8dp"
+        android:layout_below="@+id/post_header">
+
+        <ImageButton
+            android:id="@+id/add_photo_btn"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorWhite"
+            android:src="@drawable/select_image"
+            android:scaleType="fitCenter"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/description_layer"
+        android:background="#ffffff"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_below="@+id/post_photo_layer">
+
+        <EditText
+            android:textColorHint="#308840"
+            android:gravity="top"
+            android:id="@+id/add_post_description"
+            android:background="@drawable/input3"
+            android:layout_width="match_parent"
+            android:layout_height="146dp"
+            android:layout_marginTop="15dp"
+            android:padding="10dp"
+            android:hint="   Type Something..."
+            android:ems="10"
+            android:layout_alignParentTop="true"
+            android:inputType="textMultiLine"
+            android:layout_marginStart="12dp"
+            android:layout_marginEnd="12dp"
+            android:layout_alignParentStart="true"/>
+
+        <EditText
+            android:textColorHint="#308840"
+            android:id="@+id/add_post_tag"
+            android:background="@drawable/input3"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="169dp"
+            android:hint="   #tag"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:layout_marginStart="12dp"
+            android:layout_marginBottom="15dp"
+            android:layout_marginEnd="12dp"/>
+
+
+
+
+
+    </RelativeLayout>
+
+
+        <Button
+            android:id="@+id/add_post_btn"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@id/description_layer"
+            android:background="@drawable/button3"
+            android:layout_marginTop="15dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginBottom="10dp"
+            android:text="Post"
+
+            android:textAlignment="center"
+            android:textColor="@color/colorBlack"
+            />
+
+
+
+
+
+
+
+
+</RelativeLayout>

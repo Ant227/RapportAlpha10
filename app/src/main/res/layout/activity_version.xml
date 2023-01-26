@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#DDEEC7"
+    tools:context=".VersionActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+      ========================================================================================================
+      ========================================================================================================
+      ========================================================================================================
+
+        <RelativeLayout
+            android:id="@+id/version_12"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <ImageButton
+                android:background="#DDEEC7"
+                android:id="@+id/version_crossArrow12"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/cross_arrow"
+                android:layout_alignParentEnd="true"
+                android:layout_marginRight="10dp"
+                />
+
+
+            --------------------------------------------------------------------------------------------------
+
+            DATE
+
+            <TextView
+                android:id="@+id/version_date12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorBlack"
+                android:padding="2dp"
+                android:textSize="14dp"
+                android:layout_marginStart="10dp"
+                android:layout_below="@+id/version_crossArrow12"
+
+                android:text="29.10.19"
+                />
+
+
+            --------------------------------------------------------------------------------------------------------
+
+            Title
+
+            <TextView
+                android:id="@+id/version_title12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/version_date12"
+                android:layout_marginStart="10dp"
+                android:padding="2dp"
+                android:textStyle="bold"
+
+                android:textColor="@color/colorBlack"
+                android:textSize="18dp"
+
+
+                android:text="Rapport Alpha v1.2"   />
+
+
+            --------------------------------------------------------------------------------------------------------
+
+
+           CreatedBy
+
+            <TextView
+                android:id="@+id/version_createdBy12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorBlack"
+                android:textSize="10dp"
+                android:padding="2dp"
+                android:layout_marginStart="10dp"
+                android:layout_below="@+id/version_title12"
+
+                android:text="developed by Ant Bone Kyaw"
+                />
+
+
+            --------------------------------------------------------------------------------------------
+
+
+            Image
+
+            <ImageView
+                android:id="@+id/version_ImageView12"
+                android:layout_width="161dp"
+                android:layout_height="120dp"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/changelog"
+                android:layout_marginStart="10dp"
+                android:layout_below="@+id/version_createdBy12"
+
+                />
+
+
+            --------------------------------------------------------------------------------------------------------
+
+            details
+
+            <TextView
+                android:id="@+id/version_detais12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/version_ImageView12"
+                android:layout_marginStart="10dp"
+                android:padding="4dp"
+                android:textColor="@color/colorBlack"
+                android:textSize="14dp"
+
+                android:layout_marginBottom="20dp"
+
+                android:text="@string/versiondetails_12"/>
+
+
+        </RelativeLayout>
+
+        ========================================================================================================
+        ========================================================================================================
+        ========================================================================================================
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+
+
+
+
+
+            DATE
+
+            <TextView
+                android:id="@+id/version_date10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorBlack"
+                android:padding="2dp"
+                android:textSize="14dp"
+                android:layout_marginStart="10dp"
+                android:text="29.10.19"
+                />
+
+
+            --------------------------------------------------------------------------------------------------------
+
+            Title
+
+            <TextView
+                android:id="@+id/version_title10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/version_date10"
+                android:layout_marginStart="10dp"
+                android:padding="2dp"
+                android:textStyle="bold"
+                android:textColor="@color/colorBlack"
+                android:textSize="18dp"
+
+
+
+            android:text="Rapport Alpha v1.0" />
+
+            --------------------------------------------------------------------------------------------------------
+            Design by
+
+            <TextView
+                android:id="@+id/version_developedBy10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorBlack"
+                android:textSize="10dp"
+                android:padding="2dp"
+                android:layout_marginStart="10dp"
+                android:layout_below="@+id/version_title10"
+
+                android:text="developed by Ant Bone Kyaw"
+                />
+
+
+            --------------------------------------------------------------------------------------------
+
+            Design by
+
+            <TextView
+                android:id="@+id/version_designedBy10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorBlack"
+                android:textSize="10dp"
+                android:padding="2dp"
+                android:layout_marginStart="10dp"
+                android:layout_below="@id/version_developedBy10"
+
+                android:text="designed by Kaung Htet Kyaw"
+                />
+
+
+            --------------------------------------------------------------------------------------------
+
+
+            Image
+
+            <ImageView
+                android:id="@+id/version_ImageView10"
+                android:layout_width="161dp"
+                android:layout_height="120dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_below="@+id/version_designedBy10"
+
+                android:src="@drawable/design_by"
+
+
+                />
+
+
+            --------------------------------------------------------------------------------------------------------
+
+            details
+
+            <TextView
+                android:id="@+id/version_detais10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/version_ImageView10"
+                android:layout_marginStart="10dp"
+                android:padding="4dp"
+                android:textColor="@color/colorBlack"
+                android:textSize="14dp"
+
+                android:layout_marginBottom="20dp"
+
+                android:text="@string/versiondetails_10"/>
+
+
+        </RelativeLayout>
+
+        ========================================================================================================
+        ========================================================================================================
+        ========================================================================================================
+
+
+
+
+
+
+    </LinearLayout>
+
+
+
+</ScrollView>

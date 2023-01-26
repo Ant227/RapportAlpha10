@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/comment_cardView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="10dp"
+        app:cardCornerRadius="10dp"
+        app:cardBackgroundColor="#DDEEC7"
+        app:cardElevation="6dp"
+        app:cardUseCompatPadding="false">
+
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="7dp"
+
+            >
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+
+
+                <TextView
+                    android:id="@+id/comment_user_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="username"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="13dp"
+                    android:textStyle="bold"
+                    android:layout_gravity="center_vertical"
+                    />
+
+
+
+
+                <TextView
+                    android:id="@+id/comment_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Date"
+                    android:layout_marginLeft="5dp"
+                    android:textSize="8sp"
+
+                    android:layout_gravity="center_vertical"/>
+
+
+
+                <TextView
+                    android:id="@+id/comment_time"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Time"
+                    android:layout_marginLeft="5dp"
+                    android:textSize="8sp"
+                    android:layout_gravity="center_vertical" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="10dp"
+                >
+
+
+                <TextView
+                    android:id="@+id/comment_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Commnet text will display here"
+                    android:textSize="12dp"
+                    android:layout_marginLeft="5dp"
+                    android:textStyle="bold" />
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+
+    </androidx.cardview.widget.CardView>
+
+
+
+    </FrameLayout>
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/comment_profileImage"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:src="@drawable/sample_profile"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="2dp"
+        />
+
+</RelativeLayout>
